@@ -1,0 +1,15 @@
+name = "cloud-blaze-example"
+type = "webpack"
+account_id = ""
+
+[env.local]
+vars = { B2_APPLICATION_KEY = "", B2_APPLICATION_KEY_ID = "", B2_BUCKET_PREFIX = "www" }
+workers_dev = true
+
+[env.development]
+route = "dev.kelvinliu.fun/*"
+zone_id = ""
+
+[env.production]
+route = "www.kelvinliu.fun/*"
+zone_id = ""

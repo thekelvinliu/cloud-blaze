@@ -1,0 +1,9 @@
+{
+  "name": "cloud-blaze-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist worker"
+  }
+}
