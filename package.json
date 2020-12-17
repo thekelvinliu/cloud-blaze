@@ -1,7 +1,7 @@
 {
   "name": "cloud-blaze",
   "version": "0.1.1",
-  "description": "clodflare workers handler for proxying requests to backblaze b2",
+  "description": "cloudflare workers handler for proxying requests to backblaze b2",
   "main": "index.js",
   "repository": "https://github.com/thekelvinliu/cloud-blaze",
   "author": "thekelvinliu <kelvin@thekelvinliu.com>",
