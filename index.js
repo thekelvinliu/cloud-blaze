@@ -1,10 +1,11 @@
 /**
  * enhance response by adding cache headers and removing unnecessary header entries
  *
+ * @function
  * @param {Response} immRes - immutable response
  * @returns {Response} enhanced response
  */
-export const enhanceResponse = function enhanceResponse(immRes) {
+const enhanceResponse = function enhanceResponse(immRes) {
   const res = new Response(immRes.body, immRes);
 
   // optionally override cache-control
@@ -33,7 +34,7 @@ export const enhanceResponse = function enhanceResponse(immRes) {
  * @param {string} params.bucketKeyId - b2 bucket key id
  * @param {object} params.cache - worker cache
  */
-export const getBucketAuth = async function getB2BucketAuth({
+const getBucketAuth = async function getB2BucketAuth({
   bucketKey,
   bucketKeyId,
   cache = caches.default,
@@ -81,7 +82,7 @@ export const getBucketAuth = async function getB2BucketAuth({
  * @param {string} params.publicPrefix - public prefix
  * @param {string} params.publicURL - public url
  */
-export const getBucketURL = function getB2BucketURL({
+const getBucketURL = function getB2BucketURL({
   bucketName,
   bucketPrefix,
   bucketURL,
@@ -101,6 +102,8 @@ export const getBucketURL = function getB2BucketURL({
 
   return url;
 };
+
+export { enhanceResponse, getBucketAuth, getBucketURL };
 
 /**
  * cloudflare workers handler for proxying requests to backblaze b2
