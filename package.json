@@ -15,7 +15,8 @@
     "types": "tsc --allowJs --declaration --emitDeclarationOnly index.js"
   },
   "files": [
-    "!example"
+    "!example",
+    "index.d.ts"
   ],
   "keywords": [
     "b2",
