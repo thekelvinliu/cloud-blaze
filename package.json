@@ -6,7 +6,25 @@
   "repository": "https://github.com/thekelvinliu/cloud-blaze",
   "author": "thekelvinliu <kelvin@thekelvinliu.com>",
   "license": "MIT",
+  "type": "module",
+  "exports": {
+    "import": "./index.js"
+  },
+  "scripts": {
+    "clean": "rm -rf types",
+    "types": "tsc --allowJs --declaration --emitDeclarationOnly index.js"
+  },
   "files": [
     "!example"
+  ],
+  "keywords": [
+    "b2",
+    "backblaze",
+    "backblaze-b2",
+    "cloudflare",
+    "cloudflare-workers",
+    "edge",
+    "proxy",
+    "workers"
   ]
 }
